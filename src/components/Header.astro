@@ -1,0 +1,7 @@
+---
+const {current = ''} = Astro.props;
+const links=[['/','Home'],['/services/','Services'],['/emergency-plumbing/','Emergency Plumbing'],['/about/','About'],['/contact/','Contact']];
+---
+<div class="topbar"><div class="container topbar-inner"><span>Local plumbing help for Leicester homeowners and landlords</span><a href="tel:01160000000">Emergency? Call 0116 000 0000</a></div></div>
+<header class="site-header"><div class="container nav"><a class="logo" href="/"><span class="logo-mark">S</span><span>SwiftFix Plumbing</span></a><nav class="nav-links" aria-label="Main navigation">{links.map(([href,label])=><a href={href} aria-current={current===href?'page':undefined}>{label}</a>)}</nav><details class="menu"><summary>Menu</summary><nav>{links.map(([href,label])=><a href={href}>{label}</a>)}</nav></details><a class="btn" href="/contact/#quote">Request a quote</a></div></header>
+<a class="sticky-emergency" href="tel:01160000000">Emergency plumber · Call 0116 000 0000</a>

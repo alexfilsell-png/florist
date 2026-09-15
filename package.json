@@ -1,0 +1,1 @@
+{"name":"swiftfix-plumbing","private":true,"type":"module","scripts":{"dev":"astro dev","build":"astro build","preview":"astro preview"},"dependencies":{"@astrojs/cloudflare":"^12.6.10","astro":"^5.13.5"}}
